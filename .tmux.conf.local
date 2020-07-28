@@ -294,3 +294,12 @@ tmux_conf_copy_to_os_clipboard=false
 
 # move status line to top
 #set -g status-position top
+
+# -- TPM ----------------------------------------------------------------------
+set -g @tpm_plugins '            \
+  tmux-plugins/tpm               \
+  tmux-plugins/tmux-resurrect    \
+  christoomey/vim-tmux-navigator \
+'
+
+run -b '~/.tmux/plugins/tpm/tpm'
